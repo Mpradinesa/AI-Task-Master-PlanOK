@@ -11,11 +11,14 @@ Hola, soy Monica. He diseñado este gestor de tareas inteligente para la prueba 
 ## 📸 Un vistazo al proyecto
 
 ### Mi tablero de tareas
-![Dashboard Principal](https://github.com/Mpradinesa/AI-Task-Master-PlanOK/blob/main/capturas%20de%20pantalla/Imagen%201.PNG?raw=true)
+![Dashboard Principal](./screenshots/dashboard.png)
 
 ### El "detrás de escena" (Admin y Base de Datos)
-![Administrador de Django](https://github.com/Mpradinesa/AI-Task-Master-PlanOK/blob/main/capturas%20de%20pantalla/imagen2.PNG?raw=true)
-![Base de Datos PostgreSQL](https://github.com/Mpradinesa/AI-Task-Master-PlanOK/blob/main/capturas%20de%20pantalla/image_e40829.png?raw=true)
+![Administrador de Django](./screenshots/admin.PNG)
+![Base de Datos PostgreSQL](./screenshots/db.PNG)
+
+### Estructura de la API (JSON)
+![Estructura JSON de la API](./screenshots/api.PNG)
 ---
 
 ## 💡 Sobre mi forma de trabajar y este proceso
@@ -37,6 +40,13 @@ Durante la integración, me encontré con algunos "nudos" técnicos que me tocó
 * **Backend:** Python + Django REST Framework.
 * **Base de Datos:** PostgreSQL (con pgAdmin 4).
 * **Frontend:** React + Material UI.
+
+> **Acceso al Administrador (Django Admin):**
+> URL: `http://127.0.0.1:8000/admin/`
+> * **Usuario:** `planok`
+> * **Clave:** `pk123`
+> 
+> *(También puedes crear uno nuevo con: `python manage.py createsuperuser`)*
 
 ## 🚀 Cómo probarlo
 1. **Backend:** Entrar a `back-tasks-planok-main`, instalar con `pip install -r requirements.txt` y correr `python manage.py runserver`.
