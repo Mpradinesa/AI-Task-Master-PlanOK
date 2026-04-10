@@ -1,0 +1,14 @@
+# Ignorar entornos virtuales
+backend/venv/
+backend/.env
+
+# Ignorar dependencias de Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Archivos de sistema y logs
+*.pyc
+__pycache__/
+.DS_Store
+db.sqlite3

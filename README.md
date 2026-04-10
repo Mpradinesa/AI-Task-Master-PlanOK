@@ -11,14 +11,11 @@ Hola, soy Monica. He diseñado este gestor de tareas inteligente para la prueba 
 ## 📸 Un vistazo al proyecto
 
 ### Mi tablero de tareas
-Aquí se ve el diseño limpio y cómo resaltan las alertas de urgencia que programé.
 ![Dashboard Principal](https://github.com/Mpradinesa/AI-Task-Master-PlanOK/blob/main/capturas%20de%20pantalla/Imagen%201.PNG?raw=true)
 
 ### El "detrás de escena" (Admin y Base de Datos)
-Para mí era vital que los datos estuvieran bien ordenados y persistentes en PostgreSQL.
-![Admin de Django](https://github.com/Mpradinesa/AI-Task-Master-PlanOK/blob/main/capturas%20de%20pantalla/imagen2.PNG?raw=true)
+![Administrador de Django](https://github.com/Mpradinesa/AI-Task-Master-PlanOK/blob/main/capturas%20de%20pantalla/imagen2.PNG?raw=true)
 ![Base de Datos PostgreSQL](https://github.com/Mpradinesa/AI-Task-Master-PlanOK/blob/main/capturas%20de%20pantalla/image_e40829.png?raw=true)
-
 ---
 
 ## 💡 Sobre mi forma de trabajar y este proceso
