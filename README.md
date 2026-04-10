@@ -1,66 +1,78 @@
 # AI-Task Master PlanOK 🚀
 
-Hola, soy Monica. He diseñado este gestor de tareas inteligente para la prueba técnica de **Fullstack Developer IA**. Mi meta fue convertir una base técnica en un asistente de productividad real, donde la IA no solo guarda datos, sino que ayuda activamente al usuario a organizarse mejor.
+He diseñado este gestor de tareas inteligente para la prueba técnica de **Fullstack Developer IA** en PlanOK. Mi objetivo fue transformar una base técnica con desafíos de integración en un asistente de productividad real, donde la IA analiza la carga de trabajo y el sistema responde proactivamente a las necesidades del usuario.
 
-## 🧠 Lo que logré implementar con IA
-* **Clasificación Automática:** El sistema entiende el texto y asigna categorías (Salud, Trabajo, Finanzas, Estudio) por su cuenta.
-* **Hojas de Ruta:** La IA analiza la descripción y sugiere pasos concretos para que al usuario no le cueste empezar.
-* **Un mensaje de ánimo:** Integré un "Coach" que da consejos personalizados según la tarea que estés haciendo.
-* **Alerta de Urgencia:** Creé una lógica en el Backend que revisa los plazos. Si algo vence en menos de 24 horas, aparece automáticamente un aviso de **"⚠️ URGENTE"** en rojo. Quería que el sistema "avisara" visualmente cuando algo es crítico.
+## 🧠 Funcionalidades de IA Implementadas
+* **Clasificación Automática:** Análisis de contenido para asignar categorías (Salud, Trabajo, Finanzas, Estudio) de forma autónoma.
+* **Sugerencia de Subtareas (Hoja de Ruta):** Generación de pasos concretos basados en la descripción de la tarea para facilitar el inicio de la ejecución.
+* **Coach de Productividad:** Integré mensajes motivacionales y consejos personalizados dinámicos.
+* **Gestión Dinámica de Urgencia (Alerta IA):** Implementé un motor de urgencia en el Backend que monitorea las fechas límite. Si una tarea vence en menos de 24 horas, el sistema escala automáticamente su prioridad a **"⚠️ URGENTE"**, disparando una alerta visual roja en el Frontend.
 
-## 📸 Un vistazo al proyecto
+## 📸 Galería del Proyecto
 
-### Mi tablero de tareas
-![Dashboard Principal](./screenshots/dashboard.PNG)
+### Interfaz Principal (Frontend)
+Diseño "Corporate Flat" con alta densidad de datos y alertas de urgencia integradas.
+![Dashboard Principal](./screenshots/dashboard.png)
 
-### El "detrás de escena" (Admin y Base de Datos)
-![Administrador de Django](./screenshots/admin.PNG)
-![Base de Datos PostgreSQL](./screenshots/db.PNG)
+### Panel Administrativo (Backend)
+Gestión avanzada y auditoría de datos mediante el Admin de Django.
+![Admin de Django](./screenshots/admin.png)
+
+### Persistencia de Datos (PostgreSQL)
+Verificación de la estructura de tablas y datos reales mediante pgAdmin 4.
+![Base de Datos PostgreSQL](./screenshots/db.png)
 
 ### Estructura de la API (JSON)
-![Estructura JSON de la API](./screenshots/api.PNG)
+![Estructura JSON de la API](./screenshots/api.png)
+
 ---
 
-## 💡 Sobre mi forma de trabajar y este proceso
+## 💡 Algunas reflexiones
 
-Como profesional de 51 años en plena reconversión digital, este proyecto fue un gran aprendizaje. A veces, en el desarrollo grupal, el ritmo es muy acelerado y se usan términos técnicos que aún estoy terminando de dominar. En esos momentos, me di cuenta de que mi mayor aporte es la **pausa creativa y el orden**.
+Como profesional en transición hacia el desarrollo Fullstack, mi proceso de aprendizaje y trabajo tiene un matiz distinto al del programador tradicional. En este proyecto, enfrenté el desafío de colaborar con compañeros que manejan una rapidez y un lenguaje técnico que, en ocasiones, me hicieron sentir fuera de lugar. Sin embargo, creo que mi valor reside en un lugar donde la experiencia es clave: **la capacidad de estructurar soluciones con visión de conjunto.**
 
-* **Mirar el mapa completo:** Mientras mis compañeros avanzaban con mucha rapidez en el código, yo me enfoqué en entender cómo encajaban todas las piezas. Siento que mi fortaleza es asegurar que la lógica sea coherente para que, al final, el usuario reciba algo que realmente funcione.
-* **Experiencia y tecnología:** Sé que no soy la más rápida escribiendo código, pero mi formación como Ingeniera Comercial me ayuda a no perder de vista el objetivo final. Para mí, programar es resolver un problema real, y prefiero construir cimientos sólidos antes de levantar las paredes.
+* **Traduciendo el caos en lógica:** Aunque reconozco que aún estoy integrando la terminología técnica avanzada a mi vocabulario, mi mente trabaja de forma sistémica. Mi enfoque prioriza entender la **arquitectura del problema** y la estructura de las funciones antes de la ejecución. 
+* **Análisis frente a la velocidad:** Al sentirme menos escuchada en la rapidez del debate técnico, opté por observar el "mapa completo". Esto me permitió identificar incoherencias en la lógica que se estaba planteando y asegurar que el flujo de datos entre el Backend y el Frontend fuera coherente y funcional.
+* **Sabiduría estratégica:** Entiendo que la programación es un lenguaje que sigo perfeccionando, pero la ingeniería y la resolución de problemas son habilidades que ya forman parte de mi ADN profesional. Mi aporte no es la velocidad de codificación, sino la **estabilidad y la visión estratégica**.
 
-## 🔍 Desafíos que aparecieron en el camino
+## 🔍 Resolución de Problemas y Adaptación Técnica
+Durante el desarrollo, identifiqué y resolví los siguientes puntos críticos para asegurar la entrega:
 
-Durante la integración, me encontré con algunos "nudos" técnicos que me tocó desatar para que todo corriera bien:
+### 1. Adaptación del Frontend y Visibilidad del Dato
+Detecté que el Frontend original no comunicaba la inteligencia del Backend. Modifiqué los componentes de React para que pudieran interpretar y mostrar la **Prioridad Dinámica**, logrando que la "magia" de la IA fuera útil para el usuario final.
 
-* **Hacer visible la inteligencia:** Noté que el Frontend original no mostraba todo lo que el Backend ya sabía hacer. Hice los ajustes necesarios en React para que esa "magia" (como las prioridades automáticas) se viera reflejada en las tarjetas de tareas.
-* **Conexión y persistencia:** Me aseguré de que la base de datos PostgreSQL estuviera bien configurada y con sus migraciones al día, para que la información no se perdiera y la API pudiera "hablar" fluido con el Frontend.
-* **Adaptarse al entorno:** Tuve dificultades técnicas con Docker en mi equipo, así que decidí trabajar de forma nativa. Fue una elección práctica para no perder tiempo valioso y asegurar que lo importante —la funcionalidad de la IA— estuviera lista para la entrega.
+### 2. Sincronización del Trabajo en Equipo (Backend)
+Tomé el control de la integración del Backend, configuré manualmente el entorno de PostgreSQL, sincronicé las credenciales y ejecuté las migraciones necesarias para que la API finalmente pudiera persistir datos.
 
-## 🛠️ Herramientas que usé
+### 3. Decisión Ejecutiva: Infraestructura
+Ante conflictos de compatibilidad de Docker en mi equipo local, tomé la decisión de levantar el entorno de forma nativa. Esto garantizó que el 100% de mi tiempo se invirtiera en la lógica de negocio y en la funcionalidad de la IA para cumplir con el plazo.
+
+---
+
+## 🛠️ Stack Tecnológico Utilizado
 * **Backend:** Python + Django REST Framework.
-* **Base de Datos:** PostgreSQL (con pgAdmin 4).
+* **Base de Datos:** PostgreSQL (Administrada con pgAdmin 4).
 * **Frontend:** React + Material UI.
+
+## 🚀 Instrucciones de Ejecución
+1. **Backend:** Entrar a `back-tasks-planok-main`, instalar dependencias con `pip install -r requirements.txt` y ejecutar `python manage.py runserver`.
 
 > **Acceso al Administrador (Django Admin):**
 > URL: `http://127.0.0.1:8000/admin/`
 > * **Usuario:** `planok`
 > * **Clave:** `pk123`
-> 
-> *(También puedes crear uno nuevo con: `python manage.py createsuperuser`)*
 
-## 🚀 Cómo probarlo
-1. **Backend:** Entrar a `back-tasks-planok-main`, instalar con `pip install -r requirements.txt` y correr `python manage.py runserver`.
-2. **Frontend:** Entrar a `planok-frontend-main`, instalar con `npm install` y correr `npm run dev`.
+2. **Frontend:** Entrar a `planok-frontend-main`, instalar dependencias con `npm install` y ejecutar `npm run dev`.
 
 ---
 
-## 📬 Unas palabras finales
+## 📬 Compromiso con la Mejora Continua y Contacto
 
-Soy muy consciente de que este trabajo es un punto de partida y que probablemente tenga mucho margen de mejora frente a los estándares de una empresa con tanta trayectoria. Sin embargo, lo entrego con la satisfacción de haber cumplido con mi compromiso y de no haber dejado la tarea a medias.
+Soy plenamente consciente de que este trabajo es una primera aproximación y que puede resultar básico frente a los estándares de una empresa tecnológica de alto nivel. Sin embargo, he realizado este desarrollo con la convicción de **cumplir con la palabra empeñada y no dejar una entrega inconclusa**.
 
-Si tienen el tiempo, **valoraría muchísimo cualquier comentario o crítica** sobre lo que presenté. Estoy aquí para aprender, y saber en qué me equivoqué o qué puedo hacer mejor es lo que más me va a ayudar en mi camino como desarrolladora.
+Más allá del resultado del proceso de selección, **valoraría profundamente cualquier retroalimentación** técnica o metodológica sobre este trabajo. Mi objetivo es identificar mis deficiencias actuales para fortalecer mis habilidades en futuras entrevistas y seguir creciendo como desarrolladora.
 
-* **Monica Pradines**
-* [mpradinesa@gmail.com](mailto:mpradinesa@gmail.com)
-* [Repositorio en GitHub](https://github.com/Mpradinesa/AI-Task-Master-PlanOK.git)
+* **Desarrolladora:** Monica Pradines
+* **Correo:** mpradinesa@gmail.com
+* **Repositorio:** [https://github.com/Mpradinesa/AI-Task-Master-PlanOK.git](https://github.com/Mpradinesa/AI-Task-Master-PlanOK.git)
 
