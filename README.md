@@ -12,18 +12,18 @@ He diseñado este gestor de tareas inteligente para la prueba técnica de **Full
 
 ### Interfaz Principal (Frontend)
 Diseño "Corporate Flat" con alta densidad de datos y alertas de urgencia integradas.
-![Dashboard Principal](./screenshots/dashboard.png)
+![Dashboard Principal](./screenshots/dashboard.PNG)
 
 ### Panel Administrativo (Backend)
 Gestión avanzada y auditoría de datos mediante el Admin de Django.
-![Admin de Django](./screenshots/admin.png)
+![Admin de Django](./screenshots/admin.PNG)
 
 ### Persistencia de Datos (PostgreSQL)
 Verificación de la estructura de tablas y datos reales mediante pgAdmin 4.
-![Base de Datos PostgreSQL](./screenshots/db.png)
+![Base de Datos PostgreSQL](./screenshots/db.PNG)
 
 ### Estructura de la API (JSON)
-![Estructura JSON de la API](./screenshots/api.png)
+![Estructura JSON de la API](./screenshots/api.PNG)
 
 ---
 
