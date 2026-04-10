@@ -1,0 +1,40 @@
+import { httpClient } from './http.client';
+import type { Task, CreateTaskDto, UpdateTaskDto } from '../types/task.types';
+import type { TaskRepository } from './task.repository';
+
+/**
+ * Implementación concreta del repositorio de tareas.
+ * Single Responsibility: solo se encarga de la comunicación HTTP para tareas.
+ */
+class TaskService implements TaskRepository {
+  async getAll(): Promise<Task[]> {
+    // Agregamos la / al final de 'tasks'
+    const { data } = await httpClient.get<Task[]>('/tasks/'); 
+    return data;
+  }
+
+  async getById(id: string): Promise<Task> {
+    // Agregamos la / al final del ID
+    const { data } = await httpClient.get<Task>(`/tasks/${id}/`);
+    return data;
+  }
+
+  async create(dto: CreateTaskDto): Promise<Task> {
+    // ¡ESTA ES LA MÁS IMPORTANTE! Agregamos la / al final
+    const { data } = await httpClient.post<Task>('/tasks/', dto);
+    return data;
+  }
+
+  async update(id: string, dto: UpdateTaskDto): Promise<Task> {
+    // Agregamos la / al final
+    const { data } = await httpClient.put<Task>(`/tasks/${id}/`, dto);
+    return data;
+  }
+
+  async remove(id: string): Promise<void> {
+    // Agregamos la / al final
+    await httpClient.delete(`/tasks/${id}/`);
+  }
+}
+
+export const taskService: TaskRepository = new TaskService();
