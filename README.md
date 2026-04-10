@@ -11,7 +11,7 @@ Hola, soy Monica. He diseñado este gestor de tareas inteligente para la prueba 
 ## 📸 Un vistazo al proyecto
 
 ### Mi tablero de tareas
-![Dashboard Principal](./screenshots/dashboard.png)
+![Dashboard Principal](./screenshots/dashboard.PNG)
 
 ### El "detrás de escena" (Admin y Base de Datos)
 ![Administrador de Django](./screenshots/admin.PNG)
